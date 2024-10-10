@@ -1,8 +1,4 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
     background-color: DarkSlateBlue;
 }
 
