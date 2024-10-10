@@ -5,7 +5,7 @@ const l = document.getElementById("line");
 const ltx = l.getContext("2d");
 
 const select = document.getElementById('selecao');
-
+const rgb = document.getElementById('RGB')
 
 let clicando = false;
 let color = 'purple'
@@ -14,6 +14,7 @@ let color = 'purple'
 function Grad(cor){
 const grad = ctx.createLinearGradient(0, 0, c.width, 0);
 grad.addColorStop(0, "white");
+grad.addColorStop(0.9, cor);
 grad.addColorStop(1, cor);
 
 ctx.fillStyle = grad;
@@ -74,6 +75,8 @@ function AtualizaCor(x,y){
     const color = `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`;
 
     desenharSeletor(x,y)
+    
+    rgb.textContent = pixel
     select.style.background = color;
 }
 

@@ -1,24 +1,31 @@
 body {
-    background-color: DarkSlateBlue;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(72, 61, 139);
+}
+
+#cores {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1pc;
 }
 
 #matriz {
     border: 1px solid #000;
-    width: 500px;
-    height: 250px;
-    cursor: crosshair;
-    
+    width: 47vb;
+    height: 25vb;
+    margin-bottom: 5px;
 }
 
 #line {
     border: 1px solid #000;
-    width: 500px;
-    height: 50px;
+    width: 47vb;
+    height: 5vb;
 }
 
 #selecao {
     border: 1px solid #000;
-    width: 500px;
-    height: 195px;
+    width: 30vb;
+    height: 25vb;
     margin-bottom: 3px;
 }
